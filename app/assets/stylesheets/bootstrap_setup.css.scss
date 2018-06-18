@@ -1,0 +1,33 @@
+@import 'bootstrap'; 
+.container-background{
+	width:100%;
+	height:100vh;
+	background-size: cover;
+	background-image: url(image_path('background.jpg'));
+}
+
+$display3-size: 2.5rem;
+$jumbotron-bg: rgba(255,255,255, 0.2);
+$btn-primary-bg: #6BB9F0;
+$btn-warning-bg: #E08283;
+@import "bootstrap";
+.container-background {
+background-image: url(image_path('background.jpg'));
+}
+
+.jumbotron-landing{
+width:50%;
+margin-left:auto;
+margin-right:auto;
+}
+
+.nav-landing:link,
+.nav-landing:visited {
+color: #3498DB;
+}
+
+.nav-landing:hover,
+.nav-landing:active {
+color: #59ABE3;
+text-decoration: none;
+} 
