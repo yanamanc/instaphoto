@@ -14,15 +14,20 @@
 
   	<ul class="nav nav-inline">
   		<li class="nav-item">
-    	<%= link_to "Главная", root_path %>
-		</li>
-		<li class="nav-item">
-		<%= link_to "О нас", pages_about_path %>
-		</li>
-	</ul>
+    	   <%= link_to "Главная", root_path, class:'nav-landing'  %>
+		  </li>
+		  <li class="nav-item">
+		      <%= link_to "О нас", pages_about_path, class:'nav-landing'  %>
+		  </li>
+      <% if user_signed_in? %>
+      <li class="nav-item">
+          <%= link_to "Выйти", destroy_user_session_path, method: :delete, class:'nav-landing'  %>
+      </li>
+      <% end %>
+	  </ul>
 	 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 	
 
     <%= yield %>
