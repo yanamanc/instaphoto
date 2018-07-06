@@ -36,7 +36,7 @@ gem 'bootstrap'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
-
+gem "paperclip"
 group :production do
 gem 'pg'
 gem 'rails_12factor'
